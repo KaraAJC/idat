@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>IDAT | I Did A Thing</title>
+    <!--Import Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Amatic+SC|Press+Start+2P|Zilla+Slab+Highlight" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <!-- Nav -->
     <nav>
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">IDAT</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="new_creator.html">New Creator</a></li>
-          <li><a href="new_thing.html">New Thing</a></li>
-          <li><a href="about.html">About</a></li>
+      <div class="nav-wrapper teal">
+        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class=
+            "btn black" href="new_creator.html">New Creator</a></li>
+          <li><a class=
+            "btn black" href="new_thing.html">New Thing</a></li>
+          <li><a class=
+            "btn black" href="about.html">About</a></li>
         </ul>
+      <ul class="side-nav" id="mobile-menu">
+        <li><a class=
+            "btn black" href="new_creator.html">New Creator</a></li>
+          <li><a class=
+            "btn black" href="new_thing.html">New Thing</a></li>
+          <li><a class=
+            "btn black" href="about.html">About</a></li>
+      </ul>
+        <a href="index.html" class="brand-logo brand-heading">IDAT</a>
       </div>
     </nav>
-    <container>
-      <h1>I Did A Thing!</h1>
-      <h2>Stay Tuned for launch: SUBSCRIBE!</h2>
-      <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/IDAT" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/IDAT', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></form>
 
-    </container>
+    <!-- Main -->
+    <div class="container">
+      <div class="section">
+        <h1 class="brand-heading">I Did A Thing!</h1>
+        <p class="summary"><span class="teal">IDAT</span> is a daily dose of awesome things made by Queer, Trans, Non-Binary folks who are Black or Non-Black People Of Color!</p>
+        <p class="summary">You'll be able to <span class="teal">Amplify</span> their work, <span class="teal">Celebrate</span> their achievement, and <span class="teal">Support</span> them financially or any way they see fit.</p>
+        <div class="divider"></div>
+        <h2 class="brand-heading">Stay Tuned for launch:<br/> SUBSCRIBE!</h2>
+        <form style="border:1px solid #ccc;padding:3px;" action="https://tinyletter.com/IDAT" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/IDAT', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <div class="container"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input class="btn" type="submit" value="Subscribe" /><p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></div></form>
+      </div class="section">
+
+      <div class="section">
+        <div class="divider"></div>
+        <h2 class="brand-heading">Are YOU a QPOC Creator?<br/>Let Us Know!</h2>
+        <p class="summary">Right now, we're collecting info on all QPOC Creators who would like to share their work! <a href="new_creator.html">Submit your Creator info!</a> Then, <a href="new_thing.html">Submit your thing!!</a></p>
+      </div class="section">
+    </div class="container">
+
   </body>
 </html>

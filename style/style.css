@@ -1,1 +1,14 @@
 /** global styles go here **/
+  /*font-family: 'Press Start 2P', cursive;*/
+
+.brand-heading {
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+a {
+  font-weight: bold;
+}
+.summary {
+  font-family: 'Amatic SC', cursive;
+  font-size: xx-large;
+}
